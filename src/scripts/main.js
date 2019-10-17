@@ -37,6 +37,7 @@ console.log("I'm hungry again")
 
 // Create an array that contains the words in the sentence
 let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"];
+let symbol = ""
 
 /*
     The addExcitement function should be an impure function, and accept
@@ -49,9 +50,12 @@ function addExcitement(theWordArray) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
-        buildMeUp += `${sentence[i]} `;
+        buildMeUp += ` ${theWordArray[i]}`;
+
         if ((i+1) % 3 === 0) {
-        console.log(buildMeUp + '!')
+        console.log(buildMeUp += '!')
+        // } else if ((i+1) / 3 % 3 === 0) {
+        //     console.log(buildMeUp + '?')
         } else {
         console.log(buildMeUp)
         }
@@ -62,3 +66,18 @@ function addExcitement(theWordArray) {
 
 // Invoke the function and pass in the array
 addExcitement(sentence)
+
+
+
+
+
+
+// for (let i = 0; i < theWordArray.length; i++) {
+        
+//     if ((i+1) % 3 === 0) {
+//         buildMeUp += `${theWordArray[i]} ${symbol}`;
+//         console.log(buildMeUp[i])
+//     } else {
+//         buildMeUp += `${theWordArray[i]};
+//     console.log(buildMeUp[i])
+    
